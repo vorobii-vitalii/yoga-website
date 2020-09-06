@@ -1,0 +1,2049 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #f4f9f4;
+}
+
+/* Service classes */
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Header  */
+
+.header {
+    background-color: var(--primary-color);
+    font-family: "Baloo Bhai 2";
+    font-weight: bold;
+}
+
+.header__row {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media (max-width: 765px) {
+    .header__row  {
+        padding-left: 20px;
+        align-items: flex-start;
+    }
+}
+
+.yoga-man-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 109px;
+    height: 138px;
+    background-color: #a7d7c5;
+}
+
+.yoga-man-block img {
+    width: 86px;
+    height: 81px;
+    object-fit: cover;
+}
+
+.header__row__line {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 46px;
+    background-color: rgba(108, 153, 148, 0.13);
+    position: relative;
+}
+
+@media (max-width: 765px) {
+    .header__row__line {
+        background: transparent;
+    }
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    color: #444444;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: -0.21px;
+}
+
+@media (max-width: 765px) {
+    .header__menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        top: 25px;
+        background-color: #a7d7c5;
+        color: #f4f9f4;
+    }
+}
+
+.header__menu.active {
+    display: flex;
+}
+
+.header__menu__item {
+    padding: 40px 45px;
+}
+
+@media (max-width: 1000px) {
+    .header__menu__item {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 765px) {
+    .header__menu__item {
+        padding: 15px 10px;
+    }
+}
+
+.header__menu__item:last-child {
+    padding-right: 90px;
+}
+
+@media (max-width: 1000px) {
+    .header__menu__item:last-child {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 765px) {
+    .header__menu__item:last-child {
+        padding-right: 10px;
+    }
+}
+
+.header__menu__item > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-button {
+    display: none;
+    width: 46px;
+    height: 46px;
+    border: none;
+    color: #444444;
+    background: transparent
+}
+
+@media (max-width: 765px) {
+    .menu-button {
+        display: block;
+    }
+}
+
+.menu-button.active {
+    color: #a7d7c5;
+}
+
+/* Welcome section */
+
+.welcome {
+    background-color: var(--primary-color);
+}
+
+.welcome__row {
+    margin-top: -18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 84px;
+    padding-bottom: 207px;
+    padding-right: 102px;
+}
+
+@media(max-width: 1420px) {
+    .welcome__row {
+        margin-top: 0;
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 820px) {
+    .welcome__row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.welcome__row__woman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 653px;
+    width: 100%;
+    height: 653px;
+    background-image: url(../img/shape_welcome.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 31px;
+    background-size: contain;
+}
+
+@media(max-width: 1420px) {
+    .welcome__row__woman {
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 653px) {
+    .welcome__row__woman {
+       display: none;
+    }
+}
+
+.welcome_row_woman_meditate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #bed2ce;
+    border-radius: 50%;
+    width: 56.661562021%;
+    height: auto;
+}
+
+.welcome_row_woman_meditate img {
+    object-fit: cover;
+}
+
+.welcome__row__advertasion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 1420px) {
+    .welcome__row__advertasion{
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 765px) {
+    .welcome__row__advertasion{
+        margin-bottom: -20px;
+    }
+}
+
+.welcome__header {
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 98px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-top: 0;
+}
+
+@media(max-width: 1420px) {
+    .welcome__header {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 765px) {
+    .welcome__header {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    .welcome__header {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 335px) {
+    .welcome__header {
+        font-size: 40px;
+    }
+}
+
+.welcome__text {
+    max-width: 489px;
+    color: #6c9894;
+    word-break: break-all;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 26px;
+}
+
+@media (max-width: 450px) {
+    .welcome__text  {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 335px) {
+    .welcome__text  {
+        font-size: 15px;
+    }
+}
+
+.welcome__join-btn {
+    color: #fefefc;
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-radius: 10px;
+    background-color: #6c9894;
+    padding: 9px 24px;
+    border: none;
+    text-align: center;
+}
+
+@media(max-width: 765px) {
+    .welcome__join-btn {
+        margin-bottom: 60px;
+    }
+}
+
+/* Choose class section */
+
+.choose-class {
+    background-color: #6c9894;
+}
+
+.choose-class__row {
+    position: relative;
+    padding-top: 131px;
+    padding-left: 90px;
+    padding-right: 108px;
+    padding-bottom: 125px;
+}
+
+@media(max-width: 1420px) {
+    .choose-class__row {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 820px) {
+    .choose-class__row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .choose-class__row {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.choose-class__header {
+    display: block;
+    color: #f4f9f4;
+    font-family: "Baloo Bhai 2";
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+@media(max-width: 1420px) {
+    .choose-class__header {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 765px) {
+    .choose-class__header {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 520px) {
+    .choose-class__header {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 420px) {
+    .choose-class__header {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 335px) {
+    .choose-class__header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 300px) {
+    .choose-class__header {
+        font-size: 35px;
+    }
+}
+
+.choose-class__description {
+    max-width: 743px;
+    color: #f4f9f4;
+    font-family: Montserrat;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin: 58px auto 15px auto;
+}
+
+@media(max-width: 1420px) {
+    .choose-class__description{
+        margin: 30px auto 30px auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .choose-class__description {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 335px) {
+    .choose-class__description  {
+        font-size: 15px;
+    }
+}
+
+.shape-welcome-decoration {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    transform: translate(0%, -50%);
+}
+
+@media(max-width: 1420px) {
+    .shape-welcome-decoration {
+        display: none;
+    }
+}
+
+.shape-welcome-decoration img {
+    object-position: left;
+    width: 373px;
+    height: 748px;
+    object-fit: cover;
+}
+
+.choose-class__options {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media(max-width: 1420px) {
+    .choose-class__options {
+        flex-direction: column;
+    }
+}
+
+.class-option__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 37px;
+}
+
+@media(max-width: 1420px) {
+    .class-option__item {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+}
+
+.class-option__item:last-child {
+    margin-right: 0px;
+}
+
+@media(max-width: 1420px) {
+    .class-option__item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.class-option__item__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 385px;
+    height: 385px;
+    background-image: url(../img/shape_choose_class.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media(max-width: 400px) {
+    .class-option__item__img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.class-option__item__girl {
+    width: 81.558441558%;
+    height: 81.558441558%;
+}
+
+.class-option__item__girl img {
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+}
+
+.class-option__item__title {
+    margin-top: 5px;
+    color: #f4f9f4;
+    font-family: "Baloo Bhai 2";
+    font-size: 37px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 700px) {
+    .class-option__item__title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .class-option__item__title {
+        margin-bottom: 10px;
+    }
+}
+
+.class-option__item__description {
+    max-width: 312px;
+    color: #f4f9f4;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+@media(max-width: 1420px) {
+    .class-option__item__description{
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .class-option__item__description  {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 335px) {
+    .class-option__item__description  {
+        font-size: 15px;
+    }
+}
+
+
+/* Our stats section */
+
+.our-stats {
+    background: url(../img/bg-our-stats.png) no-repeat top -80px left -41px;
+}
+
+@media (max-width: 1420px) {
+    .our-stats {
+        background: #f3f3f3;
+    }
+}
+
+.our-stats__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 104px;
+    padding-bottom: 150px;
+    padding-left: 145px;
+    padding-right: 75px;
+}
+
+@media(max-width: 1420px) {
+    .our-stats__row {
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 820px) {
+    .our-stats__row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .our-stats__row {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.our-stats__header {
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 765px) {
+    .our-stats__header {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .our-stats__header {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 450px) {
+    .our-stats__header {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 335px) {
+    .our-stats__header {
+        font-size: 40px;
+    }
+}
+
+.our-stats__intro {
+    max-width: 743px;
+    color: #6c9894;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 58px;
+    margin-bottom: 131px;
+    text-align: center;
+}
+
+@media (max-width: 1420px) {
+    .our-stats__intro {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .our-stats__intro {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .our-stats__intro {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 335px) {
+    .our-stats__intro  {
+        font-size: 15px;
+    }
+}
+
+
+.our-stats__badge-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1420px) {
+    .our-stats__badge-list {
+        flex-direction: column;
+    }
+}
+
+.our-stats__badge-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 330px;
+    border: 5px solid #6c9894;
+    border-radius: 50%;
+    margin-right: 131px;
+}
+
+@media (max-width: 1420px) {
+    .our-stats__badge-item {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .our-stats__badge-item {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.our-stats__badge-item:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 1420px) {
+    .our-stats__badge-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.our-stats__badge-content {
+    padding: 46px;
+}
+
+@media (max-width: 500px) {
+    .our-stats__badge-content {
+        padding: 23px;
+    }
+}
+
+.our-stats__badge-content__value {
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 67px;
+    font-weight: 400;
+    margin-bottom: 33px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .our-stats__badge-content__value {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+.our-stats__badge-content__text {
+    color: #6c9894;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .our-stats__badge-content__text {
+        font-size: 20px;
+    }
+}
+
+
+/* Best instructor section */
+
+.best-instructor {
+    background: #6c9894;
+}
+
+.best-instructor__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+@media (max-width: 1420px) {
+    .best-instructor__row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.best-instructor__content {
+    padding-top: 265px;
+    padding-left: 93px;
+    padding-right: 71px;
+}
+
+@media (max-width: 1420px) {
+    .best-instructor__content {
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 820px) {
+    .best-instructor__content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .best-instructor__content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.best-instructor__header {
+    max-width: 427px;
+    color: #f4f9f4;
+    font-family: "Baloo Bhai 2";
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+}
+
+@media (max-width: 1420px) {
+    .best-instructor__header {
+        max-width: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 765px) {
+    .best-instructor__header {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .best-instructor__header {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .best-instructor__header {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .best-instructor__header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    .best-instructor__header {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 335px) {
+    .best-instructor__header {
+        font-size: 30px;
+    }
+}
+
+.best-instructor__text {
+    max-width: 573px;
+    word-break: break-all;
+    color: #f4f9f4;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+
+@media (max-width: 1420px) {
+    .best-instructor__text  {
+        text-align: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .best-instructor__text {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .best-instructor__text {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .best-instructor__text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 335px) {
+    .best-instructor__text {
+        font-size: 15px;
+    }
+}
+
+.best-instructor__read-more {
+    display: inline;
+    border: none;
+    border-radius: 4px;
+    background-color: #f4f9f4;
+    padding: 26px 96px;
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1420px) {
+    .best-instructor__read-more  {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 580px) {
+    .best-instructor__read-more  {
+        padding: 20px 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    .best-instructor__read-more {
+        padding: 15px 60px;
+    }
+}
+
+@media (max-width: 335px) {
+    .best-instructor__read-more {
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+}
+
+.best-instructor__woman {
+    flex-basis: 702px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+@media (max-width: 1420px) {
+    .best-instructor__woman {
+        flex-basis: 0px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        width: 66.66%;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .best-instructor__woman {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+.best-instructor__woman img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 1420px) {
+    .best-instructor__woman img {
+        width: 100%;
+    }
+}
+
+/* New experience section */
+
+.new-experience {
+    position: relative;
+    background: #f4f9f4;
+}
+
+.new-experience-figure {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 1420px) {
+    .new-experience-figure {
+        display: none;
+    }
+}
+
+.new-experience-figure img {
+    object-fit: cover;
+    object-position: 0 -115px;
+    width: 500px;
+    height: 1155px;
+}
+
+.new-experience__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 110px;
+    padding-left: 79px;
+    padding-bottom: 73px;
+    padding-right: 43px;
+}
+
+@media (max-width: 1420px) {
+    .new-experience__row {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 820px) {
+    .new-experience__row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .new-experience__row {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.new-experience__woman {
+    flex-basis: 578px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    margin-right: 166px;
+}
+
+@media (max-width: 1420px) {
+    .new-experience__woman {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 650px) {
+    .new-experience__woman {
+        flex-basis: 0px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.new-experience__woman img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+}
+
+.new-experience__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.new-experience__content * {
+    z-index: 2;
+}
+
+.new-experience__title {
+    width: 416px;
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+
+@media (max-width: 1420px) {
+    .new-experience__title {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 765px) {
+    .new-experience__title {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .new-experience__title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .new-experience__title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .new-experience__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    .new-experience__title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 335px) {
+    .new-experience__title {
+        font-size: 30px;
+    }
+}
+
+
+.new-experience__text {
+    max-width: 573px;
+    color: #6c9894;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    word-break: break-all;
+    margin-bottom: 61px;
+}
+
+@media (max-width: 1420px) {
+    .new-experience__text  {
+        text-align: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .new-experience__text {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .new-experience__text {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .new-experience__text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 335px) {
+    .new-experience__text {
+        font-size: 15px;
+    }
+}
+
+.new-experience__read-more {
+    border-radius: 4px;
+    background-color: #6c9894;
+    color: #f4f9f4;
+    font-family: "Baloo Bhai 2";
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: 22px 96px;
+}
+
+@media (max-width: 1420px) {
+    .new-experience__read-more {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    .new-experience__read-more  {
+        padding: 20px 80px;
+    }
+}
+
+@media (max-width: 450px) {
+    .new-experience__read-more {
+        padding: 15px 60px;
+    }
+}
+
+@media (max-width: 335px) {
+    .new-experience__read-more {
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+}
+
+/* Pricing section */
+
+.pricing {
+    background-color: #6c9894;
+}
+
+.pricing__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 124px;
+    padding-left: 97px;
+    padding-right: 71px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 1420px) {
+    .pricing__row  {
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 820px) {
+    .pricing__row  {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .pricing__row  {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.pricing__title {
+    color: #f4f9f4;
+    font-family: "Baloo Bhai 2";
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+@media (max-width: 765px) {
+    .pricing__title {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing__title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .pricing__title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .pricing__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    .pricing__title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 335px) {
+    .pricing__title {
+        font-size: 30px;
+    }
+}
+
+.pricing__text {
+    max-width: 743px;
+    color: #f4f9f4;
+    word-break: break-all;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 49px;
+}
+
+@media (max-width: 620px) {
+    .pricing__text {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .pricing__text {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .pricing__text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 335px) {
+    .pricing__text {
+        font-size: 15px;
+    }
+}
+
+.pricing__options {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1420px) {
+    .pricing__options {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.pricing__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin-right: 86px;
+    border-radius: 8px;
+    background-color: #f4f9f4;
+}
+
+@media (max-width: 1420px) {
+    .pricing__item {
+        margin-right: 0px;
+        margin-bottom: 30px;
+        width: 66.66%;
+    }
+}
+
+@media (max-width: 650px) {
+    .pricing__item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+    .pricing__item {
+        padding: 15px;
+    }
+}
+
+.pricing__item:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 1420px) {
+    .pricing__item:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.pricing__item__name {
+    padding-top: 18px;
+    margin-bottom: 19px;
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 550px) {
+    .pricing__item__name {
+        font-size: 25px;
+    }
+}
+
+.pricing__item__cost {
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+@media (max-width: 1420px) {
+    .pricing__item__cost {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .pricing__item__cost {
+        font-size: 25px;
+    }
+}
+
+.pricing__item__badge {
+    display: block;
+    width: 110px;
+    height: 129px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1420px) {
+    .pricing__item__badge {
+        margin-bottom: 30px;
+    }
+}
+
+.pricing__item__badge img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.pricing__item__text {
+    color: #6c9894;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1420px) {
+    .pricing__item__text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .pricing__item__text {
+        font-size: 19px;
+    }
+}
+
+.pricing__item__button {
+    border: none;
+    border-radius: 4px;
+    background-color: #6c9894;
+    color: #ffffff;
+    font-family: "Baloo Bhai 2";
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 22px 73px;
+}
+
+@media (max-width: 550px) {
+    .pricing__item__button  {
+        font-size: 19px;
+        padding: 15px 35px;
+    }
+}
+
+/* Motivation section */
+
+.motivation {
+    background: url(../img/motivation_bg.png) no-repeat 0 0;
+}
+
+@media (max-width: 1420px) {
+    .motivation {
+        background: #fcfdfc;
+    }
+}
+
+.motivation__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 153px;
+    padding-top: 75px;
+}
+
+@media (max-width: 1420px) {
+    .motivation__row  {
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 820px) {
+    .motivation__row  {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .motivation__row  {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.motivation__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/motivation_figure.svg) no-repeat center;
+    width: 408px;
+    height: 408px;
+    margin-bottom: 17px;
+    background-size: contain;
+}
+
+@media (max-width: 650px) {
+    .motivation__image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.motivation__woman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76.715686275%;
+    height: 76.715686275%;
+    border: 4px solid #6c9894;
+    border-radius: 50%;
+}
+
+.motivation__woman img {
+    display: block;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    object-position: center;
+    object-fit: cover;
+}
+
+.motivation__phrase {
+    color: #6c9894;
+    font-family: Montserrat;
+    font-size: 58px;
+    font-weight: 400;
+    text-align: center;
+    word-break: break-all;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1300px) {
+    .motivation__phrase {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .motivation__phrase {
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 765px) {
+    .motivation__phrase {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .motivation__phrase {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 455px) {
+    .motivation__phrase {
+        font-size: 25px;
+    }
+}
+
+.motivation__author {
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 58px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 191px;
+}
+
+@media (max-width: 1420px) {
+    .motivation__author  {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 650px) {
+    .motivation__author  {
+        margin-bottom: 30px;
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 450px) {
+    .motivation__author  {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 350px) {
+    .motivation__author  {
+        font-size: 25px;
+    }
+}
+
+/* Dont miss update section */
+
+.dont-miss-update {
+    background: #6c9894;
+}
+
+.dont-miss-update__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 141px;
+    padding-bottom: 217px;
+}
+
+@media (max-width: 1420px) {
+    .dont-miss-update__row {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.dont-miss-update__title {
+    color: #f4f9f4;
+    font-family: "Baloo Bhai 2";
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+@media (max-width: 900px) {
+    .dont-miss-update__title {
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 765px) {
+    .dont-miss-update__title {
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .dont-miss-update__title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 550px) {
+    .dont-miss-update__title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 450px) {
+    .dont-miss-update__title {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 355px) {
+    .dont-miss-update__title {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 310px) {
+    .dont-miss-update__title {
+        font-size: 22px;
+    }
+}
+
+.dont-miss-update__text {
+    max-width: 743px;
+    color: #f4f9f4;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    word-break: break-all;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 620px) {
+    .dont-miss-update__text {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .dont-miss-update__text {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .dont-miss-update__text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 335px) {
+    .dont-miss-update__text {
+        font-size: 15px;
+    }
+}
+
+.dont-miss-update__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    border-radius: 32px 31px 31px;
+    background-color: #ffffff;
+    max-width: 659px;
+}
+
+@media (max-width: 750px) {
+    .dont-miss-update__form {
+        height: 55px;
+    }
+}
+
+@media (max-width: 450px) {
+    .dont-miss-update__form {
+        height: 45px;
+    }
+}
+
+.dont-miss-update__email {
+    display: block;
+    padding-left: 4.730831974%;
+    padding-top: 22px;
+    margin-bottom: 21px;
+    opacity: 0.5;
+    color: #6c9894;
+    background: transparent;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 750px) {
+    .dont-miss-update__email {
+        font-size: 20px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    .dont-miss-update__email {
+        font-size: 16px;
+    }
+}
+
+.dont-miss-update__submit {
+    border-radius: 33px;
+    background-color: #f4f9f4;
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 25px;
+    font-weight: bold;
+    padding: 22px 8.646003263%;
+    border: none;
+}
+
+@media (max-width: 750px) {
+    .dont-miss-update__submit {
+        padding: 16px 8.646003263%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .dont-miss-update__submit {
+        width: 40%;
+    }
+}
+
+@media (max-width: 450px) {
+    .dont-miss-update__submit {
+        padding: 13px 8.646003263%;
+        font-size: 16px;
+    }
+}
+
+
+/* Footer section */
+
+.footer {
+    background: #f4f9f4;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 155px;
+    padding-left: 58px;
+    padding-right: 74px;
+    padding-bottom: 131px;
+}
+
+@media (max-width: 1420px) {
+    .footer__row {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.footer__brief-info {
+    display: block;
+    width: 482px;
+    margin-right: 106px;
+}
+
+@media (max-width: 1420px) {
+    .footer__brief-info {
+        width: 66.66%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__brief-info {
+        width: 80%;
+    }
+}
+
+.footer__brief-info__title {
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 39px;
+}
+
+@media (max-width: 1420px) {
+    .footer__brief-info__title {
+        text-align: center;
+    }
+}
+
+.footer__brief-info__text {
+    color: #6c9894;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+@media (max-width: 620px) {
+    .footer__brief-info__text {
+        margin-bottom: 23px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer__brief-info__text {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer__brief-info__text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 335px) {
+    .footer__brief-info__text {
+        font-size: 15px;
+    }
+}
+
+
+.footer__list-section__title {
+    color: #6c9894;
+    font-family: "Baloo Bhai 2";
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 39px;
+}
+
+@media (max-width: 1420px) {
+    .footer__list-section__title  {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+.footer__list-section {
+
+}
+
+@media (max-width: 1420px) {
+    .footer__list-section {
+        margin-top: 45px;
+    }
+}
+
+.footer__list-section__options {
+    display: flex;
+    flex-direction: column;
+    color: #6c9894;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 44.05px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__list-section_option {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 26px 0 0;
+}
+
+.footer__list-section_option:last-child {
+    margin-bottom: 0px;
+}
+
+.footer__list-section.footer-about-list {
+    width: 216px;
+    margin-right: 51px;
+}
+
+@media (max-width: 1420px) {
+    .footer__list-section.footer-about-list {
+        width: 66.66%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__list-section.footer-about-list  {
+        width: 80%;
+    }
+}
+
+.footer__list-section.footer-services-list {
+    width: 181px;
+    margin-right: 84px;
+}
+
+@media (max-width: 1420px) {
+    .footer__list-section.footer-services-list {
+        width: 66.66%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__list-section.footer-services-list  {
+        width: 80%;
+    }
+}
+
+.footer__list-section.footer-follow-list {
+    width: 188px;
+}
+
+
+@media (max-width: 1420px) {
+    .footer__list-section.footer-follow-list {
+        width: 66.66%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__list-section.footer-follow-list  {
+        width: 80%;
+    }
+}
